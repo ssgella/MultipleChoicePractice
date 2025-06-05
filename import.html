@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Questions - MC Practice App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>MC Practice App</h1>
+        <nav>
+            <a href="index.html">Practice</a>
+            <a href="import.html" class="active">Import Questions</a>
+            <a href="review.html">Review</a>
+            <a href="performance.html">Performance</a>
+        </nav>
+    </header>
 
+    <main class="container">
+        <h2>Import New Questions</h2>
+        <div id="import-status"></div>
+
+        <section class="import-section">
+            <label for="topicName">Topic Name:</label>
+            <input type="text" id="topicName" placeholder="e.g., Geography, History, Science">
+        </section>
+
+        <section class="import-section">
+            <label for="questionsText">Paste Questions Here:</label>
+            <textarea id="questionsText" rows="20" placeholder="e.g.,
+1. What is the capital of France?
+A. Berlin
+B. Paris
+C. Rome
+D. Madrid
+E. London
+
+2. Which river flows through London?
+A. Seine
+B. Thames
+C. Danube
+D. Nile
+E. Amazon"></textarea>
+        </section>
+
+        <section class="import-section">
+            <label for="answerKeyText">Paste Answer Key Here:</label>
+            <textarea id="answerKeyText" rows="10" placeholder="e.g.,
+1:B
+2:B"></textarea>
+        </section>
+
+        <button id="importBtn">Import Questions</button>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/import.js"></script>
+</body>
+</html>
